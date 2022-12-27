@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="my-5 site-title">Books</h1>
+      <button class="js-mode"></button>
+      <select class="js-select form-select">
+        <option value="default" selected disabled>Sort books by name</option>
+      </select>
+      <select class="js-year-sort form-select">
+        <option value="All" selected disabled>Sort books by year</option>
+      </select>
+      <select class="js-sort-page form-select">
+        <option value="default" selected disabled>Sort books by page</option>
+      </select>
+      <select class="js-lang-sort form-select">
+        <option selected disabled>Select a language</option>
+      </select>
+      <form class="js-form">
+        <input
+          class="js-search form-control"
+          type="text"
+          placeholder="Search Book"
+        />
+      </form>
+      <ul class="js-list list-unstyled row g-4"></ul>
+    </div>
+
+    <script src="./js/books.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
